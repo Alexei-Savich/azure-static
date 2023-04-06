@@ -1,0 +1,40 @@
+main p{
+    color:pink;
+    }
+section > p{
+    background-color: purple;
+    }
+p.important{
+    font-size: larger;
+    background-color: black;
+}
+
+p.textClass{
+    font-size: larger;
+    color: yellow;
+}
+
+body a#l1 {
+    font-weight: 300;
+}
+body a#l2 {
+    font-style: italic;
+}
+body a#l3 {
+    font-variant: small-caps;
+}
+body a#l4 {
+    font-size: smaller;
+}
+body a#l5 {
+    line-height: 200%;
+}
+body a#l6 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form div#education {
+    border-color: hotpink;
+    border-style: dashed;
+    border-width: 0.5em;
+}

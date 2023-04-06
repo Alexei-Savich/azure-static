@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Input page, Aliaksei Savich lab 4">
+    <meta name="description" content="This is input page">
+    <title>Input page</title>
+    <link rel="stylesheet" href="first_page_style.css">
+</head>
+<body>
+    <nav>
+        <a href="#1">Go to the end of the page</a> |
+        <a href="first_page.html">Go to the first page</a>
+    </nav>
+
+    <p>Please fill the form about yourself:</p>
+    <form method="post" action="mailto" autocomplete="on">
+        <p>
+            Your name: <label><input name="userName" type="text" maxlength="50" placeholder="Name" required autofocus></label>
+        </p>
+        <p>
+            Your surname: <label><input name="userSurname" type="text" maxlength="50" placeholder="Surname" required></label>
+        </p>
+        <p>
+            <label>Your month of birth: </label>
+            <input list="monthsOfBitrh"  placeholder="Your month of birth" name="months">
+            <datalist id="monthsOfBitrh">
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </datalist>
+        </p>
+        <p>
+            Your email: 
+            <input type="email" id="email" name="email" placeholder="Your e-mail" pattern=".+@.+\..+" required>
+        </p>
+        <p>
+            Your phone: 
+            <input type="tel" id="phone" name="phone" placeholder="Your phone" pattern="[\+]{1}[4]{1}[8]{1}[0-9]{9}">
+        </p>
+        <p>
+            Arriving date: 
+            <input type="date" id="arrivingDate" name="arrivingDate">
+        </p>
+        <p>
+            Choose color: 
+            <input type="color" value="#ff0000" id="inputColor" name="inputColor">
+        </p>
+        <p>
+            Your expectations: 
+            0 <input type="range" id="expectationsInput" name="expectationsInput" value="50"> 100
+        </p>
+        <p>
+            <label>Choose known languages: </label>
+            <label><input name="languages" type="checkbox" value="english">English</label>
+            <label><input name="languages" type="checkbox" value="polish">Polish</label>
+            <label><input name="languages" type="checkbox" value="russian">Russian</label>
+        </p>
+        <div id="education">
+            <label>Your education: </label>
+            <label><input name="education" type="radio" value="noEducation">No education</label><br/>
+            <label><input name="education" type="radio" value="school">School</label><br/>
+            <label><input name="education" type="radio" value="university">University</label><br/>
+        </div>
+        <p>
+            URL to your website: 
+            <label><input name="website" type="url" placeholder="Url to your website"></label>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+
+    <p id="1">End of the page</p>
+</body>
+</html>

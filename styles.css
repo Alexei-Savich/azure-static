@@ -1,0 +1,59 @@
+p {
+    font-size: 3em;
+    color:red;
+    background-image: url("image.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+    }
+h1 {
+    color:blue;
+    font-size: 200%;
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    }
+h2  {
+    font-size: 40px;
+    color: green;
+    background-color: blueviolet;
+    }
+
+div {
+    height: 80px;
+    width: 100px;
+    background-color:yellow;
+    }
+.outer{
+    height: 200px;
+    width: 300px;
+    background-color:blue;
+    margin: 100%;
+    }
+.d1{
+    margin:50px 80px 100px 20px;
+    border-color: aquamarine;
+    border-width: 5px 15px 20px 30px;
+    border-style: solid;
+    padding: 30px;
+    position: relative;
+    }
+
+table {
+    margin: auto;
+}
+
+table tr#row1 {
+    background-color: aqua;
+}
+
+table tr.row2 {
+    background-color: green;
+}
+
+table tr:nth-child(3) {
+    background-color: blue;
+    font-size: x-large;
+    background-color: aquamarine;
+}

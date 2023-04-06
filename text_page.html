@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Text page, Aliaksei Savich lab 4">
+    <meta name="description" content="This is text page">
+    <link rel="stylesheet" href="styles.css">
+    <title>Text page</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav id="Beginning">
+        <a href="#1">Go to the end of the page</a> |
+        <a href="first_page.html">Go to the first page</a>
+    </nav>
+
+    <main>
+        <h1>Main header</h1>
+        <p>This is the main part of the page</p>
+    </main>
+
+    <h2>List</h2>
+
+    <ol type = "A">
+        <li>First list element
+            <ol>
+                <li> A - Second level element</li>
+                <li> B - Second level element
+                    <ul>
+                        <li>Third level elem.
+                            <ol start="33" type="i">
+                                <li>X - 4th level elem.</li>
+                                <li>Y - 4th level elem.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li> C - Second level element</li>
+            </ol>
+        </li>
+        <li>Second list element</li>
+        <li><a href="first_page.html">Go to the first page</a></li>
+        <li><a href="#Beginning">Go to the beginning of the page</a></li>
+        <li><a href="input_page.html">Go to input forms page</a></li>
+    </ol>
+
+    <h2>Table</h2>
+
+    <table>
+      <tr id="row1">
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr class="row2">
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+      </tr>
+      <tr>
+        <td>I</td>
+        <td>J</td>
+        <td>K</td>
+        <td>L</td>
+      </tr>
+    </table>
+
+    <p>Text after table.</p>
+
+
+    <p>Divider</p>
+    <div class="outer">
+        <div>
+            div - Text inside.
+        </div>
+    </div>
+    <p>Divider</p>
+    <div class="outer">
+        <div class="d1">
+            div class="d1". Text inside.
+        </div>
+    </div>
+    <p>Divider</p>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td>
+                    <div class="d1">
+                        div class="d1". Text inside.
+                    </div>
+                </td>
+            </tr>
+        <tbody>
+    </table>
+    <p>Divider</p>
+
+    <p id="1">End of the page</p>
+
+    <footer>Made by Aliaksei Savich</footer>
+
+</body>
+</html>
